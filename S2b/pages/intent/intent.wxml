@@ -1,0 +1,47 @@
+<import src="/pages/home/home.wxml"/>
+<template is="tabbar" data="{{tabbar}}"/>
+<include src="../comment/header.wxml" />
+<view class="can  mt mb60">
+  <scroll-view style="height:{{scrollHeight}}px;" scroll-y="true" bindscrolltoupper="upper" enable-back-to-top="{{true}}" scroll-top="{{scrollTop}}" bindscrolltolower="lower" scroll-into-view="{{toView}}">
+    <block class="contan" wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+      <view class="classname3 matchNeed" data-idx="{{idx}}" catchtap="bit">
+        <view class="classname2 size15">
+          <view class='text_class '>
+            <text class="textSize c_black ">{{"订单编号 :"}}</text>
+            <text class="  textSize  s_sp m_left">{{itemName.CustomerCName}}</text>
+          </view>
+          <text class="textSize c_black">{{itemName.Status}}</text>
+        </view>
+        <view class="classname_p1">
+          <view class="classname_p">
+            <view class="classname4">
+              <text class="size14 c_black  "> {{"收款"}}</text>
+              <progress class="pro" color="#FAB579" percent="40" stroke-width="15" />
+            </view>
+            <view class="classname4">
+              <text class="size14 c_black  "> {{"入库"}}</text>
+              <progress class="pro" color="#32C7D8" percent="40" stroke-width="15" />
+            </view>
+          </view>
+          <view class="classname_p">
+            <view class="classname4">
+              <text class="size14 c_black  "> {{"付款"}}</text>
+              <progress class="pro" color="#FAB579" percent="40" stroke-width="15" />
+            </view>
+            <view class="classname4">
+              <text class="size14 c_black  "> {{"出库"}}</text>
+              <progress class="pro" color="#32C7D8" percent="40" stroke-width="15" />
+            </view>
+          </view>
+        </view>
+        <view class="classname2 bras">
+          <text class="textName"> {{"客户"}}:{{itemName.ProjectName}}</text>
+          <text class="textName"> {{"联系人"}}:{{itemName.ProjectName}}</text>
+        </view>
+        <view class="btnViewname">
+          <view class=" btnView size15" hover-class="select" catchtap="order" id="{{idx}}">编辑</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,114 @@
+page {
+font-size: 30rpx;
+
+}
+
+.userMobile, .vCode, .password {
+  display: flex;
+  background: #fff;
+  padding: 0 50rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.userMobile {
+  padding-right: 20rpx;
+}
+
+.userMobile text, .vCode text, .password text {
+  flex: 1;
+  line-height:90rpx;
+  text-align: center;
+}
+
+.register .password text {
+  letter-spacing: 20rpx;
+}
+
+.userMobile input, .vCode input, .password input {
+  height: 90rpx;
+  flex: 4;
+}
+
+.userMobile input {
+  flex: 3;
+}
+
+.userMobile .getCodeBtn {
+  height: 70rpx;
+  width: 29%;
+  padding: 0;
+font-size: 30rpx;
+  line-height: 70rpx;
+  margin-top: 10rpx;
+}
+
+button[disabled][type="primary"] {
+  background-color: #20a0ff;
+  opacity: 0.7;
+}
+
+.button-hover[type="primary"] {
+  background-color: #20a0ff;
+}
+
+.register .submit {
+  margin: 40rpx 50rpx 0;
+  background: #20a0ff;
+  letter-spacing: 10rpx;
+  line-height:80rpx;
+}
+
+.register .login {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.login navigator {
+  display: inline-block;
+  color: #20a0ff;
+}
+
+.orderClass {
+  margin-top:10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 0 50rpx;
+}
+
+.textInt {
+  width: 40%;
+  text-align: right;
+  font-size: 30rpx;
+}
+
+.nameImage {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  line-height: 80rpx;
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+}
+
+.select_one{
+  margin-top: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.orderClass {
+  margin: 16rpx 0% 0% 0%;
+  height: 80rpx;
+ font-size: 30rpx;
+  width: 80%;
+  line-height: 80rpx;
+}
+.jsClass{
+display: flex;
+justify-content: center;
+}

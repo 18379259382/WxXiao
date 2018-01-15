@@ -1,0 +1,56 @@
+<scroll-view scroll-y="true" bindscrolltoupper="upper" upper-threshold="5" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="classname1">
+      <text class="textInt">物料型号 :</text>
+      <input value="{{material}}" name="phoneInput1" class="inputText" placeholder="请输入" bindinput="phoneInput" />
+    </view>
+    <view class="classname1">
+      <text class="textInt">物料品牌 :</text>
+      <input value="{{brand}}" name="phoneInput2" class="inputText" placeholder="请输入" bindinput="phoneInput" />
+    </view>
+    <view class="classname1">
+      <text class="textInt">数量名称 :</text>
+      <input value="{{number1}}" name="phoneInput3" class="inputText" placeholder="请输入" bindinput="phoneInput" />
+    </view>
+    <view class="classname1">
+      <text class="textInt">价格 :</text>
+      <input value="{{price}}" name="phoneInput4" class="inputText" placeholder="请输入" bindinput="phoneInput" />
+    </view>
+    <view class="viewClass">
+      <text class="textInt">交期 :</text>
+      <picker  name="data0" class="picker" mode="date" value="{{makeDate}}" start="2017-12-01" end="2030-12-31" bindchange="makeDateChange">
+        <view>
+          {{makeDate}}
+        </view>
+      </picker>
+    </view>
+    <view class="viewClass">
+      <text class="textInt">生成日期 :</text>
+      <picker name="data1" class="picker" mode="date" value="{{createDate}}" start="2017-12-01" end="2030-12-31" bindchange="createDateChange">
+        <view>
+          {{createDate}}
+        </view>
+      </picker>
+    </view>
+    <view class="viewClass">
+      <text class="textInt">失效日期 :</text>
+      <picker name="data2" class="picker" mode="date" value="{{date}}" start="2017-12-01" end="2030-12-31" bindchange="bindDateChange">
+        <view>
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="classname1">
+      <text class="textInt">最小起订数量 :</text>
+      <input value="{{smallNumber}}" class="inputText" placeholder="请输入" name="phoneInput5" />
+    </view>
+    <view class="classname1">
+      <text class="textInt">最小包装数量 :</text>
+      <input value="{{smallNumber1}}" class="inputText" placeholder="请输入" name="phoneInput6" />
+    </view>
+    <view class=" mTop">
+      <button hidden="{{sendNeed1}}" id="1" class="submit" hover-class="select" formType="submit">发需求</button>
+      <button hidden="{{sendNeed2}}" id="2"  class="submit" hover-class="select" formType="submit">保存</button>
+    </view>
+  </form>
+</scroll-view>

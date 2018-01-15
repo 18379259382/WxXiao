@@ -1,0 +1,74 @@
+.textSize {
+  width: 50%;
+  text-align: right;
+}
+
+/* 进度条 */
+.pro {
+  width: 60%;
+  margin-left: 10rpx;
+}
+
+.classname_p {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.classname_p1 {
+  background: #fafafa;
+  padding: 10rpx;
+}
+
+.textName {
+  width: 50%;
+  font-size: 30rpx;
+  color: #acacac;
+}
+
+.bras {
+  border-bottom: 1rpx solid #E8E8EA;
+}
+
+ 
+.btnViewname {
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 图片 */
+
+.imagesSize {
+  vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.text_a {
+  text-align: right;
+}
+
+.aiy {
+  line-height: 100%;
+}
+
+.itemClass {
+  display: flex;
+  flex: content;
+ 
+}
+.text-rigth{
+  margin-left: 30rpx;
+}
+.mag{
+  margin-bottom: 20rpx;
+}
+.nameItem {
+  text-align: center;
+}
+.pd{
+  padding-bottom: 20rpx;
+}

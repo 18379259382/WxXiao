@@ -1,0 +1,43 @@
+.classname1 {
+  flex: content;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 10rpx 0% 10rpx 0%;
+}
+.inputText {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  width: 60%;
+  border-bottom: 1rpx solid #b5b5b5;
+}
+
+.picker {
+  text-align: left;
+  border-bottom: 1rpx solid #b5b5b5;
+  font-size: 30rpx;
+  width: 60%;
+}
+
+.viewClass {
+  flex: content;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 10rpx 0% 10rpx 0%;
+  text-align: center;
+}
+.button-hover[type="primary"] {
+  background-color: #20a0ff;
+}
+
+ .submit {
+   color: white;
+  margin: 40rpxpx 50rpx 0;
+  background-color: #01BBD2;
+  letter-spacing: 10rpx;
+  line-height: 80rpx;
+}

@@ -1,0 +1,91 @@
+<include src="../comment/header.wxml" />
+<view class="can mt ">
+  <scroll-view style="height:{{scrollHeight}}px;" scroll-y="true" bindscrolltoupper="upper" enable-back-to-top="{{true}}" scroll-top="{{scrollTop}}" bindscrolltolower="lower" scroll-into-view="{{toView}}">
+    <block class="contan" wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+      <view class="classname3 matchNeed" data-idx="{{idx}}" catchtap="bit">
+        <view class="classname2 ">
+          <view class='text_class size15'>
+            <text class="textSize c_black aiy">{{"供应商"}}:</text>
+            <text class="textSize  s_sp m_left">{{'PK1111'}}</text>
+          </view>
+          <view catchtap='textEvaluate' class='text_class text_a aiy '>
+            <text class=" aiy c_y size14 ">{{"查看评价"}}</text>
+            <image class="imagesSize ht " src=' ../../images/tip.png'></image>
+          </view>
+
+        </view>
+
+        <view class="classname_p1">
+          <view class="classname_p">
+            <view class="classname4">
+              <text class="size14  c_black "> {{"物料编号 :"}}</text>
+              <text class="size14 s_sp m_left text_s"> {{"HK00"}}</text>
+            </view>
+            <view class="classname4">
+              <text class="size14 c_black "> {{"品牌 :"}}</text>
+              <text class="size14 s_sp m_left"> {{"HK00"}}</text>
+            </view>
+          </view>
+          <view class="classname_p">
+            <view class="classname4">
+              <text class="size14  c_black"> {{"目标价格 :"}}</text>
+              <text class="size14 s_sp m_left"> {{"HK00"}}</text>
+            </view>
+            <view class="classname4">
+              <text class="size14 c_black "> {{"数量 :"}}</text>
+              <text class="size14 s_sp m_left"> {{"HK00"}}</text>
+            </view>
+          </view>
+          <view class="classname_p">
+            <view class="classname4">
+              <text class="size14 c_black "> {{"最小包装数量 :"}}</text>
+              <text class="size14 s_sp m_left"> {{"HK00"}}</text>
+            </view>
+            <view class="classname4">
+              <text class="size14  c_black"> {{"最小起订数量 :"}}</text>
+              <text class="size14 s_sp m_left"> {{"HK00"}}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class="btnViewname">
+          <view class=" size15 btnView" hover-class="select" catchtap="creatIntent" id="{{idx}}">生成订单</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+</view>
+
+<modal hidden="{{hiddenmodalput}}"  no-cancel="{{true}}" confirm-text="返回" bindconfirm="bitn" >
+  <view >
+      <view class='nameItem mag bras pd'>
+      <text class='size17 color_b' >捷扬迅捷</text>
+      </view>  
+      <view class='itemClass mag'>
+        <text>品质</text>
+        <progress class="pro text-rigth" color="#F9832A" percent="80" stroke-width="8" />
+        <text class='text-rigth'>4分</text>
+      </view>
+      <view class='itemClass mag'>
+        <text>报价</text>
+        <progress class="pro text-rigth" color="#F9832A" percent="80" stroke-width="8" />
+        <text class='text-rigth'>4分</text>
+      </view>
+      <view class='itemClass mag'>
+        <text>交货</text>
+        <progress class="pro text-rigth" color="#F9832A" percent="80" stroke-width="8" />
+        <text class='text-rigth'>4分</text>
+      </view>
+      <view class='itemClass mag'>
+        <text>服务</text>
+        <progress class="pro text-rigth" color="#F9832A" percent="80" stroke-width="8" />
+        <text class='text-rigth'>4分</text>
+      </view>
+      <view class='itemClass '>
+        <text>口碑</text>
+        <progress class="pro text-rigth" color="#F9832A" percent="80" stroke-width="8" />
+        <text class='text-rigth'>4分</text>
+      </view>
+  </view>
+</modal>

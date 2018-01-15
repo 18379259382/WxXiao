@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/seeQuotations/seeQuotations",
+    "pages/clientDetails/clientDetails",
+    "pages/crtQuote/crtQuote",
+    "pages/intent/intent",
+    "pages/intentDetails/intentDetails",
+    "pages/deliver/deliver",
+    "pages/login/login",
+    "pages/order/order",
+    "pages/query/query",
+    "pages/need/index",
+    "pages/client/client"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#01BBD2",
+    "navigationBarTitleText": "主页",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

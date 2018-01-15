@@ -1,0 +1,70 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="quote">
+    <view class="quote_a">
+      <text class="textView_a size15">订单编号:</text>
+      <input value="" name="codeNumber" class="input_a size15" placeholder="SO00001" />
+    </view>
+    <view class="quote_a">
+      <text class="textView_a size15">订单状态:</text>
+      <input value="" name="codeName" class="input_a size15" placeholder="待审核" />
+    </view>
+    <view class="quote_a">
+      <text class="textView_a size15">客户名称:</text>
+      <input value="" name="clientName" class="input_a size15" placeholder="我的客户" />
+    </view>
+    <view class="quote_a">
+      <text class="textView_a size15">供应商编号:</text>
+      <input value="" name="sName" class="input_a size15" placeholder="SO00001" />
+    </view>
+    <view class="quote_a">
+      <text class="textView_a size15">交期:</text>
+      <picker value="" name="numberDate" class="picker_a size15" mode="date" value="{{makeData}}" start="{{makeData}}" end="2030-12-31" bindchange="makeDateChange">
+        <view>
+          {{makeData}}
+        </view>
+      </picker>
+    </view>
+    <view class="textQuote_a">
+      <text class="textView_a size15">备注:</text>
+      <textarea maxlength='0' name="numberMessage" class="textQuote size15" placeholder='内容 '></textarea>
+    </view>
+  </view>
+  <scroll-view scroll-y="true">
+    <view wx:for="{{list}}" class="con" wx:for-item="itemName">
+      <view class="quote">
+        <view class="quote_a">
+          <text class="textView_a size15">物料名称:</text>
+          <input value="{{}}" bindinput="courseName " data-id="{{index}}" class="input_a size15" placeholder="SO00001" />
+        </view>
+        <view class="quote_a">
+          <text class="textView_a size15">品牌:</text>
+          <input value="" bindinput="brandName" data-id="{{index}}" class="input_a size15" placeholder="美的" />
+        </view>
+        <view class="quote_a">
+          <text class="textView_a size15">采购单价:</text>
+          <input value="" bindinput="priceName" data-id="{{index}}" class="input_a size15" placeholder="100" />
+        </view>
+        <view class="quote_a">
+          <text class="textView_a size15">销售单价:</text>
+          <input value="" bindinput="sellName" data-id="{{index}}" class="input_a size15" placeholder="100" />
+        </view>
+        <view class="quote_a">
+          <text class="textView_a size15">销售数量:</text>
+          <input value="" bindinput="numberName" data-id="{{index}}" class="input_a size15" placeholder="100" />
+        </view>
+        <view class="quote_a">
+          <text class="textView_a size15">生产日期:</text>
+          <input value="" bindinput="dateName" data-id="{{index}}" class="input_a size15" placeholder="2017-12-01" />
+        </view>
+      </view>
+    </view>
+    <view hidden="{{isHiddenTop}}" class="matchTitle  ">
+      <button class="btn btn_a size15" hover-class="select" bindtap="addSurface">添加表单</button>
+      <button id="1" class="btn size15 btn_a" hover-class="select" formType="submit">保存</button>
+    </view>
+    <view hidden="{{isHidden}}" class="matchTitle  ">
+      <button class="btn  size15 btn_a" hover-class="select" bindtap="addSurface">添加表单</button>
+      <button id="2" class="btn btn_a size15" hover-class="select" formType="submit">保存</button>
+    </view>
+  </scroll-view>
+</form>

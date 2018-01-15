@@ -1,0 +1,54 @@
+@import "/pages/home/home.wxss";
+
+.textSize {
+  width: 50%;
+  text-align: right;
+}
+
+.classname4 {
+  display: flex;
+  flex: content;
+  width: 50%;
+}
+
+.pro {
+  width: 60%;
+  margin-left: 10rpx;
+
+}
+
+
+.classname_p {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.classname_p1 {
+  background: #fafafa;
+  padding: 20rpx;
+}
+.textName{
+  width: 50%;
+  font-size: 30rpx;
+  color: #acacac;
+}
+.bras{
+  border-bottom: 1rpx solid #F7F7F7;
+}
+.btnView{
+  width: 20%;
+  margin-right: 16rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #01BBD2;
+  border-radius: 10rpx;
+  border: 2rpx solid #01BBD2;
+}
+.btnViewname{
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+ justify-content:flex-end;
+}

@@ -1,0 +1,55 @@
+
+<import src="../home/home.wxml"/>
+<template is="tabbar" data="{{tabbar}}"/>
+<include src="../comment/header.wxml" />
+<view class="can mt mb60">
+  <scroll-view scroll-y="true" scroll-y="true" bindscrolltoupper="upper" enable-back-to-top="{{true}}" bindscrolltolower="lower" style="height:{{scrollHeight}}px;">
+    <block wx:for="{{array}}" wx:for-index="idx" data-idx="{{idx}}" wx:for-item="itemName">
+      <view class='matchNeed'  data-idx="{{idx}}" bindtap='lookTap'>
+        <view class="classname2 size15">
+          <view class='text_class '>
+            <text class="textSize ">{{"客户"}} :</text>
+            <text class="textSize color_b m_left s_sp "> {{itemName.CustomerCName}}</text>
+          </view>
+          <text wx:if="{{itemName.Status==1}}" class="textSize">完成</text>
+           <text wx:elif="{{itemName.Status==2}}" class="textSize">未完成</text>
+        </view>
+        <view class="classname_p1">
+          <view class="classname_p">
+            <view class="classname4">
+              <text class="size14  l_h c_black "> {{"物料编号 : "}}</text>
+              <text class="size14  l_h m_left s_sp text_s"> {{itemName.PN}}</text>
+            </view>
+            <view class="classname4">
+              <text class="size14  l_h c_black"> {{"品牌 :"}}</text>
+              <text class="size14  l_h m_left s_sp"> {{itemName.Brand}}</text>
+            </view>
+          </view>
+          <view class="classname_p">
+            <view class="classname4">
+              <text class="size14  l_h c_black"> {{"目标价格 :"}}</text>
+              <text class="size14  l_h m_left s_sp"> {{itemName.Cost}}</text>
+            </view>
+            <view class="classname4">
+              <text class="size14  l_h c_black"> {{"数量 :"}}</text>
+              <text class="size14  l_h m_left s_sp"> {{itemName.Qty}}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class="classname_p pras ">
+          <view class="classname4">
+            <text class="size14  l_h c_black "> {{"报价数量 :"}}</text>
+            <text class="size14  l_h m_left c_y s_sp"> {{"3"}}</text>
+          </view>
+          <view class="classname4 btnViewname">
+            <view>
+              <view class=" btnView size15" hover-class="select" catchtap="compileTap" id="{{idx}}">编辑</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+</view>

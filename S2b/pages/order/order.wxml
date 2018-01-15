@@ -1,0 +1,26 @@
+<view class="register">
+<view class="vCode">
+<text class=" size17  mM">捷扬迅科电子有限公司</text>
+</view>
+ <view class="vCode">
+  <picker   class='m_left'
+     mode="date" value="{{makeData}}" start="2018-01-01" end="2030-12-31"
+     >
+      <view>
+        {{makeData}}
+      </view>
+    </picker>
+  </view>
+  <view class="orderClass">
+    <view class="getimage"bindtap="clickPerson">
+      <label class="loginLab ">{{firstPerson}}</label>
+      <image  class="nameImage" src="../../images/icon_t.png"></image>
+    </view>
+          <view class="phone_select no_bottom" hidden="{{selectPerson}}">
+        <view class="select_one " bindtap="orderSelect" data-me="登门拜访">登门拜访</view>
+        <view class="select_one " bindtap="orderSelect" data-me="电话联系">电话联系</view>
+        <view class="select_one" bindtap="orderSelect" data-me="邮件联系">邮件联系</view>
+      </view>
+  </view>
+  <button type="primary" loading="{{loading}}"  plain="{{plain}}" hidden="{{btnItem}}" hover-class="hover_submit" class="submit" bindtap="btnTap" disabled="{{btnDisabled}}">生成预约</button>
+</view>

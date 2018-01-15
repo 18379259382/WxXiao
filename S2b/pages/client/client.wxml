@@ -1,0 +1,40 @@
+<import src="/pages/home/home.wxml"/>
+<template is="tabbar" data="{{tabbar}}"/>
+<include src="../comment/header.wxml" />
+<view class="can mt mb60">
+  <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" enable-back-to-top="{{true}}" scroll-top="{{scrollTop}}">
+
+    <block wx:for="{{array}}" wx:for-index="idx" data-idx="{{idx}} " wx:key="idx" wx:for-item="itemName"  hidden='{{isShow}}' >
+      <view class="matchNeed "  data-index="{{idx}}" bindtap='details'>
+        <view class="client">
+          <text class="szie16">{{itemName.CName}}</text>
+        </view>
+        <view class="client_b color_b">
+          <view class='client_text client_brod'>
+            <text class="size14 s_weight c_blue">{{itemName.RequirementQty}}</text>
+            <text class="size14 b_gray">{{"需求数量"}}</text>
+          </view>
+          <view class='client_text client_brod'>
+            <text class="size14 s_weight c_blue">{{itemName.OrderQty}}</text>
+            <text class="size14 b_gray">{{"订单数量"}}</text>
+          </view>
+          <view class='client_text client_brod'>
+            <text class="size14 s_weight c_y">{{itemName.OrderAmount}}</text>
+            <text class="size14 b_gray">{{"订单金额"}}</text>
+          </view>
+          <view class='client_text'>
+            <text class="size14 s_weight color_x">{{itemName.Receivables}}</text>
+            <text class="size14 b_gray">{{"应收款项"}}</text>
+          </view>
+        </view>
+        <view class='cl'>
+          <view class="client_a ">
+            <view class="btnView size14" hover-class="select" catchtap="order" id="{{idx}}">预约</view>
+            <view class="btnView size14" hover-class="select" catchtap="sendNeed" id="{{idx}}">发需求</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+</view>

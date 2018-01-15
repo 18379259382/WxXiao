@@ -1,0 +1,101 @@
+<template name="tabbar">
+    <view class="tabbar_box" style="background-color:{{tabbar.backgroundColor}}; border-top-color:{{tabbar.borderStyle}}; {{tabbar.position == 'top' ? 'top:0' : 'bottom:0'}}">
+        <block wx:for="{{tabbar.list}}" wx:for-item="item" wx:key="index">
+            <navigator class="tabbar_nav" url="{{item.pagePath}}" style="width:{{1/tabbar.list.length*100}}%; color:{{item.selected ? tabbar.selectedColor : tabbar.color}}" open-type="redirect">
+                <image class="tabbar_icon" src="{{item.selected ? item.selectedIconPath : item.iconPath}}"></image>
+                <text>{{item.text}}</text>
+            </navigator>
+        </block>
+    </view>
+</template>
+
+<template is="tabbar" data="{{tabbar}}"/>
+
+
+<view class="home_ta bo_botton ">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class='classname_a bo_botton pl  item_paading'>
+    <view class="classname_noTop Slo right_bo">
+      <text class='text_mb size15 c_h'>当前提成</text>
+      <text class='size15 b_9'> 100000</text>
+    </view>
+    <view class="classname_noTop Slo pl">
+      <text class='text_mb size15 c_h'> 待收货款</text>
+      <text class='size15 c_y'> 100000</text>
+    </view>
+  </view>
+  <view>
+
+    <view class='bo_botton pp'>
+      <view class='text_a ml pb '>
+        <text class='text_border'>我的需求</text>
+      </view>
+      <view class='classname_a item_paading'>
+        <view class="classname Slo">
+          <text class='text_mb'>{{555}} </text>
+          <text class='size15 b_9'>需求总数 </text>
+        </view>
+        <view class="classname Slo">
+          <text class='text_mb'>{{555}} </text>
+          <text class='size15 b_9'>有效需求 </text>
+        </view>
+        <view class="classname Slo">
+          <text class='text_mb c_blue'>{{555}} </text>
+          <text class='size15 b_9'>已报价 </text>
+        </view>
+      </view>
+
+    </view>
+
+    <view class='bo_botton p_pl'>
+      <view class='text_a  pb '>
+        <text class='text_border'>订单明细</text>
+      </view>
+
+      <view class='classname_a  text_a '>
+        <view class="classname Slo right_bo ">
+          <text class='text_mb size15 b_9'>订单总数 </text>
+          <text>111 </text>
+        </view>
+        <view class="classname Slo right_bo ">
+          <text class='text_mb size15 b_9'>已审核 </text>
+          <text>3333 </text>
+        </view>
+        <view class="classname Slo right_bo">
+          <text class='text_mb size15 b_9'>已采购 </text>
+          <text>33 </text>
+        </view>
+        <view class="classname Slo ">
+          <text class=' text_mb size15 b_9'>已入库 </text>
+          <text>33</text>
+        </view>
+      </view>
+      <view class='classname_a '>
+        <view class="classname Slo right_bo">
+          <text class='  size15 b_9 text_mb'>通知出库 </text>
+          <text>111 </text>
+        </view>
+        <view class="classname Slo right_bo">
+          <text class=' text_mb size15 b_9 '>待报关 </text>
+          <text>3333 </text>
+        </view>
+        <view class="classname Slo right_bo">
+          <text class='text_mb size15 b_9  '>已报关 </text>
+          <text>33 </text>
+        </view>
+        <view class="classname Slo ">
+          <text class='text_mb size15 b_9  '>已出库 </text>
+          <text>33</text>
+        </view>
+      </view>
+    </view>
+    <view class='item_text  pp '>
+      <view class='text_a  pb ml'>
+        <text class='text_border'>待办事项</text>
+      </view>
+    </view>
+  </view>
+</view>

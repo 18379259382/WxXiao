@@ -1,0 +1,77 @@
+<view class='bo_botton'>
+  <view >
+  <image class='images_i' src='../../images/icon_c.jpg'></image>
+  </view>
+  <view class='center_a'>
+    <view class='center_name bras'>
+      <view class='imageClass '>
+        <image class='image_clinett' src='../../images/icon_mes.png'></image>
+      </view>
+      <view class="clinetD_image">
+        <text class=' size17'>{{clientDetailsItem.name}}</text>
+        <text class='b_9 size17'>{{clientDetailsItem.englishName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='item_a'>
+    <view class="clinetD">
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"客户编号"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.clienter}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"外部编号"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.without}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"国家/地区"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.country}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"公司地址"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.location}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"联系电话"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.phone}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"传真"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.fax}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"电子邮箱"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.mailbox}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"账期"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.longTime}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"公司网站"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.website}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"应用领域"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.territory}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"交易币种"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.money}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"交易方式"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.means}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 noBorder">{{"业务员"}}</view>
+        <view class="clinetD_f size15 noBorder">{{clientDetailsItem.salesman}}</view>
+      </view>
+      <view class="clinetD_e">
+        <view class="clinetD_h size15 ">{{"备注"}}</view>
+        <view class="clinetD_f size15 ">{{clientDetailsItem.remark}}</view>
+      </view>
+    </view>
+
+  </view>
+</view>

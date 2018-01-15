@@ -1,0 +1,6 @@
+<view class="seekClass">
+  <view class="search-wrap">
+    <input type="text" placeholder="请输入搜索内容" class="search-input input-tap" bindinput="put_in" bindinput="bindKeywordInput" value="{{searchKeyword}}" />
+    <icon type="search" size="20" bindtap='c_need' class="icon-search input-tap" />
+  </view>
+</view>

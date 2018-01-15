@@ -1,0 +1,27 @@
+<!--register.wxml-->
+<view class="register">
+  <view class="vCode">
+    <input placeholder="请输入手机号码" maxlength="11" type="number" bindinput="nameInput" />
+  </view>
+  <view class="userMobile">
+    <input placeholder="请输入验证码" type="number" bindinput="codeInput" />
+    <button class='getCodeBtn' style='color:{{getCodeBtnProperty.titileColor}}' type="default" bindtap='getCodeAct' disabled='{{getCodeBtnProperty.disabled}}' loading='{{getCodeBtnProperty.loading}}'>{{getCodeBtnProperty.title}}</button>
+  </view>
+
+  <view class="orderClass">
+    <view class="getimage" bindtap="clickPerson">
+      <label class="loginLab">{{firstPerson}}</label>
+      <image  class="nameImage" src="../../images/icon_t.png"></image>
+    </view>
+
+    <view  hidden="{{selectPerson}}">
+      <view class="select_one" bindtap="mySelect" data-me="业务">业务</view>
+      <view class="select_one" bindtap="mySelect" data-me="买手">买手</view>
+      <view class="select_one" bindtap="mySelect" data-me="工程师">工程师</view>
+      <view class="select_one" bindtap="mySelect" data-me="采购商">采购商</view>
+      <view class="select_one" bindtap="mySelect" data-me="供应商">供应商</view>
+    </view>
+
+  </view>
+  <button type="primary" loading="{{loading}}" hidden="{{btnItem}}" hover-class="hover_submit" class="submit" bindtap="bindButtonTap" disabled="{{btnDisabled}}">绑定</button>
+</view>

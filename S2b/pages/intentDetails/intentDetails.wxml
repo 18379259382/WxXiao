@@ -1,0 +1,52 @@
+<scroll-view class="container" scroll-y="true" bindscrolltoupper="upper" upper-threshold="5" lower-threshold="5" bindscrolltolower="lower">
+  <block class="contan" wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+    <view class="classname3 matchNeed" data-idx="{{idx}}" >
+      <view class="classname2 size15">
+        <view class='text_class '>
+          <text class="textSize c_black">{{"物料编号 :"}}</text>
+          <text class="textSize  s_sp m_left">{{itemName.CustomerCName}}</text>
+        </view>
+        <text class="textSize c_black">{{itemName.Status}}</text>
+      </view>
+      <view class='classname_a pd_Intent color_F'>
+        <view class="classname ">
+          <text class='c_black size15 pa_bottom'>品牌 </text>
+          <text class='size15'>{{555}} </text>
+
+        </view>
+        <view class="classname ">
+          <text class='c_black size15 pa_bottom'>价格 </text>
+          <text class='size15'>{{555}} </text>
+
+        </view>
+        <view class="classname ">
+          <text class='c_black size15 pa_bottom'>数量 </text>
+          <text class='size15'>{{555}} </text>
+
+        </view>
+      </view>
+      <view class="classname_p1">
+        <view class="classname_p">
+          <view class="classname4">
+            <text class="size14 c_black "> {{"收款"}}</text>
+            <progress class="pro" color="#FAB579" percent="40" stroke-width="15" />
+          </view>
+          <view class="classname4">
+            <text class="size14 c_black "> {{"入库"}}</text>
+            <progress class="pro" color="#32C7D8" percent="40" stroke-width="15" />
+          </view>
+        </view>
+        <view class="classname_p">
+          <view class="classname4">
+            <text class="size14 c_black "> {{"付款"}}</text>
+            <progress class="pro" color="#FAB579" percent="40" stroke-width="15" />
+          </view>
+          <view class="classname4">
+            <text class="size14 c_black "> {{"出库"}}</text>
+            <progress class="pro" color="#32C7D8" percent="40" stroke-width="15" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>

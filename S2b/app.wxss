@@ -1,0 +1,256 @@
+/* 按钮 */
+
+.select {
+  background-color: #01bbd2;
+}
+
+.textInt {
+  margin-right: 16rpx;
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+  font-size: 30rpx;
+}
+
+.mTop {
+  margin-top: 24rpx;
+}
+.mM{
+  margin: 40rpx;
+}
+/* 查找 */
+
+.seekClass {
+  display: flex;
+  flex-direction: row;
+  background-color: #01bbd2;
+  width: 100%;
+  height: 120rpx;
+  flex: auto;
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+}
+
+.search-wrap {
+  position: relative;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 4rpx;
+  width: 90%;
+  margin: 20rpx;
+}
+
+.search-wrap .icon-search {
+  margin-right: 10rpx;
+}
+
+.search-wrap .search-input {
+  flex: auto;
+  font-size: 28rpx;
+}
+
+.input-tap {
+  padding-left: 10rpx;
+}
+
+/* 取消滚条 */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 主页 */
+
+.matchNeed {
+  border-top: 10rpx solid #f5f5f5;
+  border-bottom: 10rpx solid #f5f5f5;
+}
+
+.right_bo {
+  border-right: 2rpx solid #ececec;
+}
+
+.bo_botton {
+  border-bottom: 20rpx solid #f5f5f5;
+}
+
+.color_F {
+  background-color: #fafafa;
+}
+
+.l_h {
+  line-height: 30rpx;
+}
+
+.size15 {
+  font-size: 30rpx;
+}
+
+.size14 {
+  font-size: 28rpx;
+}
+
+.szie16 {
+  font-size: 32rpx;
+}
+
+.size17 {
+  font-size: 34rpx;
+}
+
+/* 颜色 */
+
+/* 黑色 */
+
+.c_h {
+  color: #666;
+}
+
+/* 灰色 */
+
+.b_9 {
+  color: #9a9a9a;
+}
+
+/* 深黄色 */
+
+.c_y {
+  color: #ff9722;
+}
+
+/* 蓝色 */
+
+.c_blue {
+  color: #01bbd2;
+}
+
+/* 深灰 */
+
+.b_gray {
+  color: #b5b5b5;
+}
+
+/* 红色 */
+
+.color_x {
+  color: #fe4c4b;
+}
+
+/* 黑色 */
+
+.color_b {
+  color: black;
+}
+
+/* 粗体 */
+
+.s_weight {
+  font-weight: 600;
+}
+
+.m_left {
+  margin-left: 8rpx;
+}
+
+/*字体 灰色 */
+
+.c_black {
+  color: #acacac;
+}
+
+.s_sp {
+  letter-spacing: 4rpx;
+}
+
+.pd_Intent {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.pa_bottom {
+  padding-bottom: 10rpx;
+}
+
+/* 设置字体不折行 */
+
+.text_s {
+  width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 编辑按钮 */
+
+.btnView {
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 160rpx;
+  margin-right: 16rpx;
+  text-align: center;
+  color: #01bbd2;
+  border-radius: 10rpx;
+  border: 2rpx solid #01bbd2;
+}
+.b_border{
+  border-bottom: 2rpx solid #b5b5b5;
+}
+/* 预约 发需求 */
+
+.itenClass {
+  font-size: 30rpx;
+  width: 40%;
+  color: black;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.pp {
+  padding: 20rpx;
+}
+
+.Slo {
+  padding: 10rpx;
+}
+
+.text_class {
+  width: 50%;
+}
+
+.classname2 {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+
+.classname4 {
+  display: flex;
+  flex: content;
+  width: 50%;
+}
+
+.p_pl {
+  padding: 20rpx 20rpx 0% 20rpx;
+}
+
+/* 背景色 */
+
+.color_b {
+  background: #fafafa;
+}
+.mt{
+  margin-top: 120rpx;
+}
+.mb60{
+    margin-bottom: 120rpx;
+}
+.ml20{
+margin-left: 40rpx;
+}
