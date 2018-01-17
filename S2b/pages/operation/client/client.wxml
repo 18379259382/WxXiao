@@ -1,4 +1,4 @@
-<import src="/pages/home/home.wxml"/>
+<import src="/pages/operation/home/home.wxml"/>
 <template is="tabbar" data="{{tabbar}}"/>
 <include src="../comment/header.wxml" />
 <view class="can mt mb60">

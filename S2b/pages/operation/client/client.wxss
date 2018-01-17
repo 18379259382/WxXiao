@@ -1,4 +1,4 @@
-@import "/pages/home/home.wxss";
+@import "/pages/operation/home/home.wxss";
 .client_text {
   width: 25%;
   display: flex;

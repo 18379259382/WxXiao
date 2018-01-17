@@ -1,4 +1,4 @@
-@import "/pages/home/home.wxss";
+@import "/pages/operation/home/home.wxss";
 
 .textSize {
   width: 50%;

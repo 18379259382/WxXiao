@@ -14,7 +14,7 @@
   <view class="orderClass">
     <view class="getimage"bindtap="clickPerson">
       <label class="loginLab ">{{firstPerson}}</label>
-      <image  class="nameImage" src="../../images/icon_t.png"></image>
+      <image  class="nameImage" src="../../../images/icon_t.png"></image>
     </view>
           <view class="phone_select no_bottom" hidden="{{selectPerson}}">
         <view class="select_one " bindtap="orderSelect" data-me="登门拜访">登门拜访</view>

@@ -36,7 +36,7 @@
 
  .submit {
    color: white;
-  margin: 40rpxpx 50rpx 0;
+  margin: 40rpx 50rpx 0;
   background-color: #01BBD2;
   letter-spacing: 10rpx;
   line-height: 80rpx;

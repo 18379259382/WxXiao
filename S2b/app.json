@@ -1,22 +1,22 @@
 {
   "pages": [
         "pages/index/index",
-    "pages/home/home",
-    "pages/seeQuotations/seeQuotations",
-    "pages/clientDetails/clientDetails",
-    "pages/crtQuote/crtQuote",
-    "pages/intent/intent",
-    "pages/intentDetails/intentDetails",
-    "pages/deliver/deliver",
-    "pages/login/login",
-    "pages/order/order",
-    "pages/query/query",
-    "pages/need/index",
-    "pages/client/client",
-"pages/engineerHome/engineerHome",
-"pages/engineerNeed/engineerNeed",
-"pages/engineerQuote/engineerQuote",
-"pages/engineerIntent/engineerIntent","pages/engineerClose/engineerClose"
+    "pages/operation/home/home",
+    "pages/operation/seeQuotations/seeQuotations",
+    "pages/operation/clientDetails/clientDetails",
+    "pages/operation/crtQuote/crtQuote",
+    "pages/operation/intent/intent",
+    "pages/operation/intentDetails/intentDetails",
+    "pages/operation/deliver/deliver",
+    "pages/operation/login/login",
+    "pages/operation/order/order",
+    "pages/operation/query/query",
+    "pages/operation/need/index",
+    "pages/operation/client/client",
+"pages/engineer/engineerHome/engineerHome",
+"pages/engineer/engineerNeed/engineerNeed",
+"pages/engineer/engineerQuote/engineerQuote",
+"pages/engineer/engineerIntent/engineerIntent","pages/engineer/engineerClose/engineerClose"
 
   ],
   "window": {

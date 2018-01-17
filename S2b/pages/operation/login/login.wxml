@@ -11,7 +11,7 @@
   <view class="orderClass">
     <view class="getimage" bindtap="clickPerson">
       <label class="loginLab">{{firstPerson}}</label>
-      <image  class="nameImage" src="../../images/icon_t.png"></image>
+      <image  class="nameImage" src="../../../images/icon_t.png"></image>
     </view>
 
     <view  hidden="{{selectPerson}}">

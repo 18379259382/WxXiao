@@ -8,7 +8,7 @@ App({
     } else {
       //调用登录接口
       wx.getUserInfo({
-        withCredentials: false,
+        withCredentials: false, 
         success: function (res) {
           that.globalData.userInfo = res.userInfo
           typeof cb == "function" && cb(that.globalData.userInfo)
@@ -67,28 +67,28 @@ App({
       borderStyle: "#C2C2C4",
       list: [
         {
-          pagePath: "/pages/home/home",
+          pagePath: "/pages/operation/home/home",
           text: "首页",
           iconPath: "/images/icon_home.png",
           selectedIconPath: "/images/icon_unhome.png",
           selected: true
         },
         {
-          pagePath: "/pages/client/client",
+          pagePath: "/pages/operation/client/client",
           text: "客户",
           iconPath: "/images/icon_intent_home.png",
           selectedIconPath: "/images/icon_intent_unhome.png",
           selected: false
         },
         {
-          pagePath: "/pages/need/index",
+          pagePath: "/pages/operation/need/index",
           text: "需求",
           iconPath: "/images/icon_user_need.png",
           selectedIconPath: "/images/icon_user_unneed.png",
           selected: false
         },
         {
-          pagePath: "/pages/intent/intent",
+          pagePath: "/pages/operation/intent/intent",
           text: "订单",
           iconPath: "/images/icon_intent.png",
           selectedIconPath: "/images/icon_unitnet.png",
@@ -105,35 +105,35 @@ App({
       borderStyle: "#C2C2C4",
       list: [
         {
-          pagePath: "/pages/engineerHome/engineerHome",
+          pagePath: "/pages/engineer/engineerHome/engineerHome",
           text: "首页",
           iconPath: "/images/icon_home.png",
           selectedIconPath: "/images/icon_unhome.png",
           selected: true
         },
         {
-          pagePath: "/pages/engineerNeed/engineerNeed",
+          pagePath: "/pages/engineer/engineerNeed/engineerNeed",
           text: "需求",
           iconPath: "/images/icon_user_need.png",
           selectedIconPath: "/images/icon_user_unneed.png",
           selected: false
         },
         {
-          pagePath: "/pages/engineerQuote/engineerQuote",
+          pagePath: "/pages/engineer/engineerQuote/engineerQuote",
           text: "报价",
           iconPath: "/images/icon_unquote.png",
           selectedIconPath: "/images/icon_quote.png",
           selected: false
         },
         {
-          pagePath: "/pages/engineerIntent/engineerIntent",
+          pagePath: "/pages/engineer/engineerIntent/engineerIntent",
           text: "订单",
           iconPath: "/images/icon_intent.png",
           selectedIconPath: "/images/icon_unitnet.png",
           selected: false
         },
         {
-          pagePath: "/pages/engineerClose/engineerClose",
+          pagePath: "/pages/engineer/engineerClose/engineerClose",
           text: "结算",
           iconPath: "/images/icon_close.png",
           selectedIconPath: "/images/icon_unclose.png",

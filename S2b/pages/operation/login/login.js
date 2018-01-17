@@ -1,5 +1,5 @@
 let app = getApp();
-var Util = require('../../utils/util.js')
+var Util = require('../../../utils/util.js')
 Page({
   data: {
     selectPerson: true,
@@ -151,7 +151,7 @@ Page({
          data: that.data.userRegister.reg_verify,
       })
       wx.redirectTo({
-        url: '../home/home'
+        url: '../../index/index'
       });
     }
     console.log(this.data.userRegister.mobile)
