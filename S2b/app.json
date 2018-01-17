@@ -1,6 +1,6 @@
 {
   "pages": [
-        "pages/index/index",
+    "pages/index/index",
     "pages/operation/home/home",
     "pages/operation/seeQuotations/seeQuotations",
     "pages/operation/clientDetails/clientDetails",
@@ -13,11 +13,11 @@
     "pages/operation/query/query",
     "pages/operation/need/index",
     "pages/operation/client/client",
-"pages/engineer/engineerHome/engineerHome",
-"pages/engineer/engineerNeed/engineerNeed",
-"pages/engineer/engineerQuote/engineerQuote",
-"pages/engineer/engineerIntent/engineerIntent","pages/engineer/engineerClose/engineerClose"
-
+    "pages/engineer/engineerHome/engineerHome",
+    "pages/engineer/engineerNeed/engineerNeed",
+    "pages/engineer/engineerQuote/engineerQuote",
+    "pages/engineer/engineerIntent/engineerIntent",
+    "pages/engineer/engineerClose/engineerClose"
   ],
   "window": {
     "backgroundTextStyle": "light",

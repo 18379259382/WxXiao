@@ -1,11 +1,11 @@
 <view class='bo_botton'>
   <view >
-  <image class='images_i' src='../../images/icon_c.jpg'></image>
+  <image class='images_i' src='../../../images/icon_c.jpg'></image>
   </view>
   <view class='center_a'>
     <view class='center_name bras'>
       <view class='imageClass '>
-        <image class='image_clinett' src='../../images/icon_mes.png'></image>
+        <image class='image_clinett' src='../../../images/icon_mes.png'></image>
       </view>
       <view class="clinetD_image">
         <text class=' size17'>{{clientDetailsItem.name}}</text>

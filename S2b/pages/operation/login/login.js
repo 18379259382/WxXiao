@@ -8,7 +8,6 @@ Page({
     loading: false,
     inputValue: "",
     itme: true,
-    imageUrl: "../../images/icon_open.png",
     focus: false,
     btnDisabled: true,
     getCodeBtnProperty: {
@@ -84,14 +83,14 @@ Page({
         } else {
           wx.showToast({
             title: '获取失败',
-            image: '../../images/icon_x.png'
+            image: '../../../images/icon_x.png'
           })
         }
       },
       fail: function () {
         wx.showToast({
           title: '获取失败',
-          image: '../../images/icon_x.png'
+          image: '../../../images/icon_x.png'
         })
       }
     })
@@ -142,7 +141,7 @@ Page({
     if (Person == '请选择角色') {
       wx.showToast({
         title: '请选择角色',
-        image: '../../images/icon_g.png'
+        image: '../../../images/icon_g.png'
       })
     } else {
       //网络请求绑定电话
