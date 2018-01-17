@@ -137,6 +137,7 @@ Page({
     })
   },
   bindButtonTap: function () { //绑定按钮
+  var  that =this;
     var Person = this.data.firstPerson;
     if (Person == '请选择角色') {
       wx.showToast({
@@ -147,9 +148,9 @@ Page({
       //网络请求绑定电话
       wx.setStorage({
         key: 'xunjie',
-        data: '111',
+         data: that.data.userRegister.reg_verify,
       })
-      wx.switchTab({
+      wx.redirectTo({
         url: '../home/home'
       });
     }

@@ -1,0 +1,4 @@
+<view style=' width: {{Towidth}}px;  height: {{Toheight}}px;'>
+
+<image  class='img' src='../../images/icon_index.jpg'></image>
+</view>
