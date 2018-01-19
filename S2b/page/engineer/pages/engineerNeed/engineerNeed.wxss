@@ -1,0 +1,24 @@
+@import "../engineerHome/engineerHome.wxss";
+.swiper-tab{
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center;  
+    line-height: 80rpx;
+    background-color: #01BBD2;
+}
+.swiper-tab-list{
+    font-size: 30rpx;  
+    display: inline-block;  
+    width: 33%;  
+    color: white;  
+}
+.on{
+    color: black;  
+    border-bottom: 5rpx solid black;
+}
+.swiper-box{ 
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+ }

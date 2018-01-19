@@ -27,6 +27,7 @@ App({
       })
     }
   },
+  // 业务
   editTabBar: function () {
     var tabbar = this.globalData.tabbar,
       currentPages = getCurrentPages(),
@@ -67,28 +68,28 @@ App({
       borderStyle: "#C2C2C4",
       list: [
         {
-          pagePath: "/pages/operation/home/home",
+          pagePath: "/page/operation/pages/home/home",
           text: "首页",
           iconPath: "/images/icon_home.png",
           selectedIconPath: "/images/icon_unhome.png",
           selected: true
         },
         {
-          pagePath: "/pages/operation/client/client",
+          pagePath: "/page/operation/pages/client/client",
           text: "客户",
           iconPath: "/images/icon_intent_home.png",
           selectedIconPath: "/images/icon_intent_unhome.png",
           selected: false
         },
         {
-          pagePath: "/pages/operation/need/index",
+          pagePath: "/page/operation/pages/need/index",
           text: "需求",
           iconPath: "/images/icon_user_need.png",
           selectedIconPath: "/images/icon_user_unneed.png",
           selected: false
         },
         {
-          pagePath: "/pages/operation/intent/intent",
+          pagePath: "/page/operation/pages/intent/intent",
           text: "订单",
           iconPath: "/images/icon_intent.png",
           selectedIconPath: "/images/icon_unitnet.png",
@@ -105,35 +106,40 @@ App({
       borderStyle: "#C2C2C4",
       list: [
         {
-          pagePath: "/pages/engineer/engineerHome/engineerHome",
+          pagePath: 
+      "/page/engineer/pages/engineerHome/engineerHome",
           text: "首页",
           iconPath: "/images/icon_home.png",
           selectedIconPath: "/images/icon_unhome.png",
           selected: true
         },
         {
-          pagePath: "/pages/engineer/engineerNeed/engineerNeed",
+          pagePath: 
+          "/page/engineer/pages/engineerNeed/engineerNeed",
           text: "需求",
           iconPath: "/images/icon_user_need.png",
           selectedIconPath: "/images/icon_user_unneed.png",
           selected: false
         },
         {
-          pagePath: "/pages/engineer/engineerQuote/engineerQuote",
+          pagePath: 
+          "/page/engineer/pages/engineerQuote/engineerQuote",
           text: "报价",
           iconPath: "/images/icon_unquote.png",
           selectedIconPath: "/images/icon_quote.png",
           selected: false
         },
         {
-          pagePath: "/pages/engineer/engineerIntent/engineerIntent",
+          pagePath: 
+          "/page/engineer/pages/engineerIntent/engineerIntent",
           text: "订单",
           iconPath: "/images/icon_intent.png",
           selectedIconPath: "/images/icon_unitnet.png",
           selected: false
         },
         {
-          pagePath: "/pages/engineer/engineerClose/engineerClose",
+          pagePath:
+          "/page/engineer/pages/engineerClose/engineerClose", 
           text: "结算",
           iconPath: "/images/icon_close.png",
           selectedIconPath: "/images/icon_unclose.png",

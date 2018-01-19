@@ -1,7 +1,0 @@
-
-<import src="/pages/engineer/engineerHome/engineerHome.wxml"/>
-<template is="tabbar" data="{{tabbar}}"/>
-<view>
-<text>1111111</text>
-</view>
-
